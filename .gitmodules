@@ -1,5 +1,5 @@
 [submodule "openremote"]
     path = openremote
     url = https://github.com/Onformant/openremote.git
-    branch = main
+    branch = master
     update = rebase
