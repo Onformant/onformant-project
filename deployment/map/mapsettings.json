@@ -1,12 +1,26 @@
 {
   "options": {
-    "default": {
-      "center": [
-        4.374355,
-        50.839134
+    "default" : {
+      "center" : [
+        -86.7840,
+        36.1650
       ],
+      "bounds" : [-89.52,34.94,-84.09,36.62],
+      "zoom" : 15,
+      "minZoom" : 0,
+      "maxZoom" : 19,
+      "boxZoom" : false,
+      "geocodeUrl" : "https://nominatim.openstreetmap.org"
+    },
+    "master": {
+      "center": [
+        -86.7840,
+        36.1650
+      ],
+      "bounds" : [-89.52,34.94,-84.09,36.62],
       "zoom": 7,
-      "boxZoom": false
+      "boxZoom": false,
+      "geocodeUrl" : "https://nominatim.openstreetmap.org"
     }
   },
   "version": 8,
@@ -492,7 +506,7 @@
       "source-layer": "building",
       "paint": {
         "fill-color": {
-          "base": 1, 
+          "base": 1,
           "stops": [
             [ 15.5, "#d0d0d0" ],
             [ 16, "#d3d3d3" ]

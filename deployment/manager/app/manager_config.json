@@ -2,12 +2,84 @@
   "loadLocales": true,
   "realms": {
     "default": {
-      "appTitle": "Custom Project",
-      "styles": ":host > * {--or-app-color2: #F9F9F9; --or-app-color3: #22211f; --or-app-color4: #0c4da2; --or-app-color5: #CCCCCC;}",
+      "appTitle": "Onformant IoT",
+      "styles": ":host > * {--or-app-color2: #F9F9F9; --or-app-color3: #22211f; --or-app-color4: #153199; --or-app-color5: #CCCCCC;}",
+      "logo": "/images/logo.png",
+      "logoMobile": "/images/logo-mobile.png",
+      "favicon": "/images/favicon.ico",
+      "language": "en",
+      "headers": [
+        "map",
+        "assets",
+        "insights",
+        "account",
+        "logout",
+        "export"
+      ]
+    },
+    "master": {
+      "appTitle": "Onformant admin",
+      "styles": ":host > * {--or-app-color2: #F9F9F9; --or-app-color3: #22211f; --or-app-color4: #153199; --or-app-color5: #CCCCCC;}",
       "logo": "/images/logo.png",
       "logoMobile": "/images/logo-mobile.png",
       "favicon": "/images/favicon.ico",
       "language": "en"
     }
+  },
+  "pages": {
+    "map": {
+      "card": {
+        "default": {
+          "exclude": [
+            "notes"
+          ]
+        },
+        "assetTypes": {
+          "WeatherAsset": {
+            "exclude": [
+              "location",
+              "notes",
+              "model",
+              "manufacturer"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "assets": {
+    "tree": {
+      "add": {
+        "typesParent": {
+          "default": {
+            "exclude": [
+              "TradfriLightAsset",
+              "TradfriPlugAsset",
+              "ArtnetLightAsset",
+              "ArtnetAgent",
+              "MacroAgent",
+              "ControllerAgent",
+              "KNXAgent",
+              "ZWAgent",
+              "TradfricAgent",
+              "TimerAgent",
+              "VelbusTcpAgent",
+              "VelbusSerialAgent",
+              "ShipAsset",
+              "MicrophoneAsset",
+              "EnergyOptimisationAsset",
+              "ElectricitySupplierAsset",
+              "ElectricityProducerAsset",
+              "ElectricityConsumerAsset",
+              "ElectricityChargerAsset",
+              "ElectricityBatteryAsset",
+              "ElectricVehicleFleetGroupAsset",
+              "ElectricVehicleAsset"
+            ]
+          }
+        }
+      }
+    }
   }
+
 }
